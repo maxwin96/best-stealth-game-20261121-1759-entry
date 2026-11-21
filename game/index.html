@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Velvet Fox — a museum stealth game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0d0a07;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+  }
+  #wrap {
+    text-align: center;
+  }
+  canvas {
+    display: block;
+    width: 960px;
+    height: 640px;
+    max-width: 96vw;
+    max-height: 92vh;
+    background: #2b2620;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.25);
+    image-rendering: auto;
+  }
+  #hint {
+    color: #c9b896;
+    font-size: 13px;
+    margin-top: 8px;
+    font-family: sans-serif;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640"></canvas>
+  <div id="hint">WASD / arrows move &middot; Shift sneak &middot; Click / Space toss a pebble &middot; R restart &middot; M mute</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
